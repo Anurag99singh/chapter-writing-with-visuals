@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "production_source": {
+    "repository": "anshulprojectmgmt/Writing-agent",
+    "branch": "chatgpt-plus-automation",
+    "commit": "03c4a06b46d137aa7fa70304b9b177c28fa83616"
+  },
+  "visual_source": {
+    "repository": "anshulprojectmgmt/anshul-skills-registry",
+    "commit": "30a5d06b12cf6baf29c7ff0977595018179529c7"
+  },
+  "visual_dependency_files": [
+    {
+      "path": "installed/adapt-linkedin-visual-content/SKILL.md",
+      "source_blob_sha": "864b5322dfe2bae9f77ae182bb798380f281393f",
+      "size": 8320
+    },
+    {
+      "path": "installed/adapt-linkedin-visual-content/agents/openai.yaml",
+      "source_blob_sha": "8698917fdf79ad8de8565bd358b1683dbdc6a399",
+      "size": 474
+    },
+    {
+      "path": "installed/adapt-linkedin-visual-content/assets/icon.svg",
+      "source_blob_sha": "4c3163aa85e15ed80114f93a9a2b140a53012c44",
+      "size": 1210
+    },
+    {
+      "path": "installed/adapt-linkedin-visual-content/references/content-rules.md",
+      "source_blob_sha": "b8de440da9404fb4c671c3dad51ab9bb129c4ebb",
+      "size": 5325
+    },
+    {
+      "path": "installed/adapt-linkedin-visual-content/references/coverage-ledger.md",
+      "source_blob_sha": "8b0607a7a8819772b791f80feba998510d1042de",
+      "size": 2176
+    },
+    {
+      "path": "installed/adapt-linkedin-visual-content/references/visual-story-brief.md",
+      "source_blob_sha": "943816e7b43caea6c1905568764e48103ddedf21",
+      "size": 2602
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/SKILL.md",
+      "source_blob_sha": "dc9cbcbb96282514f93d866de01162b50dd9b015",
+      "size": 12018
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/agents/openai.yaml",
+      "source_blob_sha": "29b8283f52a5d8ef4f6db032b56b625726266471",
+      "size": 448
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/article-references/approved-institution.png",
+      "source_blob_sha": "58c57f5c30c980cc1397fc52e2a39cba9c08e72e",
+      "size": 1749535
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/article-references/approved-two-princes.png",
+      "source_blob_sha": "156228afb8ebf517680b2ffd3ef598bff1454194",
+      "size": 1612628
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/article-references/product-engineer-comparison.png",
+      "source_blob_sha": "4df3df737f82aeb378150ba3e1bfcb7c53961ab1",
+      "size": 1481647
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/branding/anshul-jain-profile.jpg",
+      "source_blob_sha": "3ee51136121a88bce1172c4d665f254719b0c5a9",
+      "size": 56285
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/dense-reference-themes/01-reference-atlas.jpg",
+      "source_blob_sha": "70a189fefb98ee8965d637810b7884c108948e4a",
+      "size": 292905
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/dense-reference-themes/02-tool-role-catalogue.jpg",
+      "source_blob_sha": "6c3f805a7c550294950d04725df8dd10bd5cdaf6",
+      "size": 240685
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/dense-reference-themes/03-workflow-artifact-map.jpg",
+      "source_blob_sha": "c7842931a45d2b87dd734c7b036d592a80c5bbee",
+      "size": 211598
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/dense-reference-themes/04-presenter-contrast-board.jpg",
+      "source_blob_sha": "080c2fc9e5ca6c68d8b9406600789ae649d88196",
+      "size": 242367
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/dense-reference-themes/05-six-panel-field-guide.jpg",
+      "source_blob_sha": "59fa6a5dbdd1e65458c185da84f5d8f8b269225d",
+      "size": 278855
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/design_tokens.json",
+      "source_blob_sha": "8d0f1f29b5f8b68357398db3d1ca4935eec8df0e",
+      "size": 3534
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/icon.svg",
+      "source_blob_sha": "4c3163aa85e15ed80114f93a9a2b140a53012c44",
+      "size": 1210
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/gold-standards/editorial-operating-layer.png",
+      "source_blob_sha": "13156677352aeb4c8cbbb5c69aa26a40cbf29e66",
+      "size": 2198574
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/gold-standards/neon-human-control.png",
+      "source_blob_sha": "94d8db612afd591b589243244bd02b9b6e3ac558",
+      "size": 1288153
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/gold-standards/visual-notebook-program-dont-prompt.png",
+      "source_blob_sha": "7ed4db1c51c82c838064b2f3639d4c8a0e2ee055",
+      "size": 1469453
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/news-signal/news-signal-google.jpg",
+      "source_blob_sha": "0d27ded629e27c6bcc59eaa1880a525d59407542",
+      "size": 53582
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/news-signal/news-signal-nvidia.jpg",
+      "source_blob_sha": "47a7279b3ad57d71f84bc72185f8399e6872c894",
+      "size": 1559390
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/news-signal/news-signal-source-card.jpg",
+      "source_blob_sha": "b0b9c23d71719e3322855528b19791f58d38bf63",
+      "size": 1536481
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/references/01-reference-atlas-post.jpg",
+      "source_blob_sha": "cc2db831d5e08e0037e929801d15f359f06934e1",
+      "size": 241706
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/references/02-tool-role-catalogue-post.jpg",
+      "source_blob_sha": "2b25f1f2e92acb1a8dda00150cdd265b55db530a",
+      "size": 192208
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/references/03-workflow-artifact-map-post.jpg",
+      "source_blob_sha": "8fa6dc0403152eb1e35c8a3d4721449376803503",
+      "size": 160626
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/references/04-presenter-contrast-board-post.jpg",
+      "source_blob_sha": "74a44302baba0edebf8f078559e1d32ded354fdf",
+      "size": 199836
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/references/05-six-panel-field-guide-post.jpg",
+      "source_blob_sha": "89c71dc25f7d311ef25b12c979e6c47814f0adda",
+      "size": 220911
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/references/data-signal.png",
+      "source_blob_sha": "ecde9741e49883ee532992465ec0eb4f1de178b1",
+      "size": 206366
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/references/editorial-impact.png",
+      "source_blob_sha": "f40a0f73ba483db74f33d766b6df3c4961f5c598",
+      "size": 347545
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/references/neon-intelligence.png",
+      "source_blob_sha": "7f4574e607490b5183003a73c94248b4ffc00c7f",
+      "size": 413402
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/assets/references/visual-notebook.png",
+      "source_blob_sha": "94220d4fcf7381510745d8cd9bd368382ba7f208",
+      "size": 311812
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/references/article-visuals.md",
+      "source_blob_sha": "724a4268600b109f0559985c1ba9f54e058917d9",
+      "size": 1321
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/references/dense-reference-layouts.md",
+      "source_blob_sha": "684dc36623ec700f30fdeeb9db47efe781ebbdc7",
+      "size": 7992
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/references/design-systems.md",
+      "source_blob_sha": "4de09751afd3d2ba27b21581b573d7856edb6595",
+      "size": 5075
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/references/gold-standard-quality-bar.md",
+      "source_blob_sha": "797d2109d510da81267cea848fb163d97e5ce177",
+      "size": 3285
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/references/news-signal.md",
+      "source_blob_sha": "9e9baa8db0b295d163c51e708cd179bb6b0b36c6",
+      "size": 3469
+    },
+    {
+      "path": "installed/render-linkedin-visual-post/scripts/validate_post_image.py",
+      "source_blob_sha": "ab7f0d33a9591568251b9618a87e8e017450ac8c",
+      "size": 1279
+    },
+    {
+      "path": "installed/review-linkedin-visual-post/SKILL.md",
+      "source_blob_sha": "4f3d8ec12742e085836e6fe7ed1bd6f0dfb79f36",
+      "size": 7682
+    },
+    {
+      "path": "installed/review-linkedin-visual-post/agents/openai.yaml",
+      "source_blob_sha": "3d1f42e04ef900d98f8f8ecf55564440a17212e2",
+      "size": 405
+    },
+    {
+      "path": "installed/review-linkedin-visual-post/assets/icon.svg",
+      "source_blob_sha": "f387e96b74b4a2a407760075db8859a99fdf91f1",
+      "size": 2922
+    },
+    {
+      "path": "installed/review-linkedin-visual-post/references/anshul-review-standard.md",
+      "source_blob_sha": "de4c14b17ad0648281c0b6f054ffb4a211c7d85a",
+      "size": 5630
+    },
+    {
+      "path": "installed/review-linkedin-visual-post/scripts/validate_article_visual.py",
+      "source_blob_sha": "1154c83b5dfbed7c105ba9c42183486113b728c7",
+      "size": 2196
+    },
+    {
+      "path": "installed/review-linkedin-visual-post/scripts/validate_post_pipeline.py",
+      "source_blob_sha": "0caffa90c28a2153b3a3fed74125db403eed63a5",
+      "size": 8246
+    }
+  ],
+  "files": {
+    "SKILL.md": "33aaee22b5e9ce16753bd3b2043d5b97ef69379e856dc1b744ff3c3104c97d5e",
+    "installed/adapt-linkedin-visual-content/SKILL.md": "671f5a0cacf7a5a5494e4465e6b9406a4fa7445e7427a5ffbeffaca88464d726",
+    "installed/adapt-linkedin-visual-content/agents/openai.yaml": "63b736a7cb9023ba9426e2d2b3dd81afe31796b426349f20e1fed810d4ccaf83",
+    "installed/adapt-linkedin-visual-content/assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee",
+    "installed/adapt-linkedin-visual-content/references/content-rules.md": "cd5f9a985365a629e46e5c2e6af3eca44cf34a4bcb26cdcb09528a10e9b70962",
+    "installed/adapt-linkedin-visual-content/references/coverage-ledger.md": "af2ec0027d4ce5248f43d9919d64bf4798637bf7a980c06be0cd156060979ba6",
+    "installed/adapt-linkedin-visual-content/references/visual-story-brief.md": "c98fe8daefad131fbe6e5c193265731b2208e181f96cd0e3ea729bb7de2bb617",
+    "installed/render-linkedin-visual-post/SKILL.md": "62b1ff4bc660d9b820ba9201fc7724c93443af44e93608408e1e5b2508509262",
+    "installed/render-linkedin-visual-post/agents/openai.yaml": "ba7bac6ad8cf4b7e5e7c58cc479966c798728b2d51a0ac473a481f15f7966d0f",
+    "installed/render-linkedin-visual-post/assets/article-references/approved-institution.png": "010118de31b71d7146ce65a048e6e1fbcd5e276443cc012d807dc0bb11033933",
+    "installed/render-linkedin-visual-post/assets/article-references/approved-two-princes.png": "60dc0c4bfde09f58626ff7e1cc8c214932dee1cc962c85cd867e03260637499f",
+    "installed/render-linkedin-visual-post/assets/article-references/product-engineer-comparison.png": "8d6b13855174da92b21b6503e49af08647685c66b36f5055ffb7ddf98a6858bb",
+    "installed/render-linkedin-visual-post/assets/branding/anshul-jain-profile.jpg": "211a797940bf1e2062983d539f74ea5f89333c2e0939b791b8404786c5887aae",
+    "installed/render-linkedin-visual-post/assets/dense-reference-themes/01-reference-atlas.jpg": "629b2cd89ec4b870c9450b0475429402328c1e94d739e2e5e5fbd85a34d39e7c",
+    "installed/render-linkedin-visual-post/assets/dense-reference-themes/02-tool-role-catalogue.jpg": "0d4f86e717ba4e42e3b7d0f362d03a7c26a32b8935eb2daf5e3f69fbd63d18c2",
+    "installed/render-linkedin-visual-post/assets/dense-reference-themes/03-workflow-artifact-map.jpg": "14ef76a1cee0cc20e086d3f71ddce0297dfa2867fedeb1d009fbd599b333692e",
+    "installed/render-linkedin-visual-post/assets/dense-reference-themes/04-presenter-contrast-board.jpg": "4916141dfd4984eaeee58bb287550a727d1bf7087d5e26478a666d5fffa4435c",
+    "installed/render-linkedin-visual-post/assets/dense-reference-themes/05-six-panel-field-guide.jpg": "c7a4584ed1ac0e6b7fe4987ed75923ff0ba0a6df86272ecf1685188b3bd1f479",
+    "installed/render-linkedin-visual-post/assets/design_tokens.json": "6c11739deaab5ccf6f202aa5d07b7789f9783c585166bc299d4a5f2c85aa4d33",
+    "installed/render-linkedin-visual-post/assets/gold-standards/editorial-operating-layer.png": "36deaf25d87ef539bd9530e3f5a342134eea0d8c93e0e28e7727e8a313aa08da",
+    "installed/render-linkedin-visual-post/assets/gold-standards/neon-human-control.png": "638c1d6d34b54b7d9b6bf6de59c179520e40fede60cf2432a1ff8f66c36143f8",
+    "installed/render-linkedin-visual-post/assets/gold-standards/visual-notebook-program-dont-prompt.png": "0a237232c5b8ac76355b76835939658dbbb75ff89a7e4f657291241a4e766a52",
+    "installed/render-linkedin-visual-post/assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee",
+    "installed/render-linkedin-visual-post/assets/news-signal/news-signal-google.jpg": "4591971b1dbb23c35d77354e9c10433d4ec4915e1fc5d69963627922aafb85d5",
+    "installed/render-linkedin-visual-post/assets/news-signal/news-signal-nvidia.jpg": "1ccb049b8d44aa828bac4d267ce060f38d239f366dff0fdcacb290207917f69f",
+    "installed/render-linkedin-visual-post/assets/news-signal/news-signal-source-card.jpg": "a5822b30b2253bcd53ff12e9c73489b579ffcec413dddcf55693dff552b35ec9",
+    "installed/render-linkedin-visual-post/assets/references/01-reference-atlas-post.jpg": "60637895f5911c46a8e72601edd391910b1ed944037bdec02a0afc7a742704f3",
+    "installed/render-linkedin-visual-post/assets/references/02-tool-role-catalogue-post.jpg": "57696923bc92960c9a6172b7f38149fe484da27824a72694a796a07c698e11e6",
+    "installed/render-linkedin-visual-post/assets/references/03-workflow-artifact-map-post.jpg": "99647fbbc8cd8d76fad8bc9cc55308a4a395715ea4f1bee52159de458aa3b39e",
+    "installed/render-linkedin-visual-post/assets/references/04-presenter-contrast-board-post.jpg": "7545a260b95d8a33d8c9da9d1e44a3b81887f5994888b19851c720e5454d0d23",
+    "installed/render-linkedin-visual-post/assets/references/05-six-panel-field-guide-post.jpg": "430e68bf796cb67edd0f144f3ec1aa4782604c4fa0c58a035087067a081a5a9d",
+    "installed/render-linkedin-visual-post/assets/references/data-signal.png": "e1f7d6340a66bfc217e1af6bdc80b78295416c791a701219bbc0e79822b6c293",
+    "installed/render-linkedin-visual-post/assets/references/editorial-impact.png": "2ee472089649fc63b2d9a04fb9db2ee4a24d4e142cfe63c9cdc15315d0c4aaf7",
+    "installed/render-linkedin-visual-post/assets/references/neon-intelligence.png": "4f762db03c2519e958ee46c762fd69e1ef413387877b17956d9dd5ee24eb0c2e",
+    "installed/render-linkedin-visual-post/assets/references/visual-notebook.png": "ccbde735786bc27f2171253711a87a52d0eef58f66fabc8781c42c1fa44c7c31",
+    "installed/render-linkedin-visual-post/references/article-visuals.md": "8fbf27393b5dc36e1f4d7ff96c7f822b4da9dfd3126c29c1ee8e6157ba55ff29",
+    "installed/render-linkedin-visual-post/references/dense-reference-layouts.md": "0eaf218dc6a50ddf9c03ae378af9105c0a2e0e70e3a48a4c9e52251e7654348d",
+    "installed/render-linkedin-visual-post/references/design-systems.md": "41f80a34a44b8b85c5168327a9410a3ea01b39230238e7de81ad4292adfbe05c",
+    "installed/render-linkedin-visual-post/references/gold-standard-quality-bar.md": "35a80d0c65b02888985e2acd2c0e3b644b1e13c5747e90fff7712f9bb93ae7c2",
+    "installed/render-linkedin-visual-post/references/news-signal.md": "39d09a8b134f2c446ae1ea35c85f7e7d4ef62c9fd6455fb4909aee1ee8991dcb",
+    "installed/render-linkedin-visual-post/scripts/validate_post_image.py": "bfcc734a2dbaacd5f3b3fd76eba8d427cbc6322f06c8063c14d96ea99ebed0ab",
+    "installed/review-linkedin-visual-post/SKILL.md": "b1718c9230987db73a07ca0136712a99fe7469234162f2e2e788bcc430434a7b",
+    "installed/review-linkedin-visual-post/agents/openai.yaml": "2809ef72733afa51c559e68a6a67ba7dba46281387551d9025c7ef7c1d774bda",
+    "installed/review-linkedin-visual-post/assets/icon.svg": "fbb6c7314886573cd56c3f86884a65afe3b5f4ce4bf1ee6baeeeb1fa50aea7a4",
+    "installed/review-linkedin-visual-post/references/anshul-review-standard.md": "5328c13359626390ab8f6f1c0ebe86cca895a23868f700777c81183a69c03d52",
+    "installed/review-linkedin-visual-post/scripts/validate_article_visual.py": "c9b1bdf512142f2300a13b8dbbc60e95b84d26d970989feb430a0f935e973169",
+    "installed/review-linkedin-visual-post/scripts/validate_post_pipeline.py": "a320c7b310104e4d07c5c65565090f44ff4c668e9fcfe1192079a89fbd5506aa",
+    "pipeline.json": "49fe61bf9264aa66f39bd50241c14bd78010fe1214978b232eccad2f40d316b7",
+    "references/revisions.md": "ff4620c3afd4864a20bf1d01d02d122139b65237e18d2dfa03b2da903df0ef8a",
+    "references/runtime.md": "7bd2c33d6bcb904731800455f8461a20892f98bffe66f6cbacbc9d76fa5bf207",
+    "references/state-schema.md": "bce4eac4cd1b737ffe72c220f4c1adeeba18083a0ddcb834eb1aa6adebb77c22",
+    "references/workflow.md": "5a9abe46149029e66902f42e1cae40415ddf2fdfffc2dd5e6d2275d91ceb30b2",
+    "scripts/validate_bundle.py": "5caa655e7cdc24c62f7d8562583a379852980c45bedefe36bd8c50df68424d1a",
+    "scripts/validate_chapter_presentation.py": "638165d0f3a3b09fb2e1fafcd0ff864c5c29f4bdb0579ea3e30cf680a0199f31",
+    "scripts/workflow_guard.py": "ab78fb39ece01bc99dd5953109405cd99fca6cbb66a3b64d20349439213baf1a",
+    "workers/chapter-writing/SKILL.md": "262106041f0b52b2c7c65c21b4bb277be0fc053234e35e1837d164f2c1473314",
+    "workers/chapter-writing/instruction.md": "0aa2331c43c72c0d26d61852a28479b0f5c6b1529bead897f567ea3734bf58a3",
+    "workers/chapter-writing/references/ai-humanizer-core.md": "348b2f6f13827f9d9cd51e559bc418c65df7228ce987495f073f74020de8da68",
+    "workers/chapter-writing/references/anshul-voice.md": "b33c114ff4d46705e8dfc28d8532b20e77ec852fa5e51eed6f97843f80290989",
+    "workers/chapter-writing/references/anshul-writing-style.md": "1e14102400d18cf554cf6517d6982c73c4069ed28dd0d714cc94b16cb77c7a3d",
+    "workers/chapter-writing/references/output-formatting.md": "87898ca8de7176b06745ab2b97d53aa540d6cfd9a9d15d1c357cfd95ec727a66",
+    "workers/chapter-writing/references/presentation-contract.md": "fb0adba57de3a67541e845985040ed77261319d83c0abfe4a4e3996a9feabe2d",
+    "workers/chapter-writing/references/presentation-profile.json": "e2f2bb01959e5832f22416678f7ce0f1387afb2e285016d9a7392a41317ef284",
+    "workers/chapter-writing/references/skill-sources.json": "7d68114d6a384bf0f57db74f305368f6c1c026f876192e5e95bcc5d254316307",
+    "workers/chapter-writing/references/storytelling-article.md": "fa00bd15cd5ff85857ed619185146212fc60f97393719e44dc624d5ab9be9d6d",
+    "workers/chapter-writing/references/writing-style.md": "b28b5a137bda2218aa8cc9e00658be38edea813b8bb7a71e970c71e2bd8c3a81",
+    "workers/clean-evaluate/SKILL.md": "ed6a221147bf24e1a4383b2e5a070bd88a30e09c63f1b6d943c07d860f2f9e48",
+    "workers/clean-evaluate/instruction.md": "a54f2ed1fa67c20d50a2c384802f5156ae683cb7888c21f87ca24fefcc18085b",
+    "workers/clean-evaluate/references/rubrics/chapter_writing.yaml": "3b9a1c5632f48c6499f868570bc292331ba12fe4aa8a6b31350e4c05489557df",
+    "workers/clean-evaluate/references/rubrics/chapter_writing_final.yaml": "a4ccdb83ca302fc9cdd059ee9504ca7d4eed7febd5d681e6732677e3311a51f5",
+    "workers/visual-generation/SKILL.md": "10c5670edda25e2cf58fe6520819cebf68cb1e5886fe9b721dc55b1752ab8017",
+    "workers/visual-generation/instruction.md": "77832d42a4f2edbacb1ea1297bbccf5af0dde6da04a194a48917b79d7ba8d5c3",
+    "workers/visual-generation/references/data-lock-contract.md": "62f641021dad7d5ba08627731087b6fc73987eeb5f7b4a59c419ac11020f02b4",
+    "workers/visual-generation/references/generated-visual-contract.md": "3e982c55ebb375a8a6fc8a913f69ebf06427c7669b5e1c5139881c23b5f14852",
+    "workers/visual-generation/references/generation-mode-selector.md": "f64dea2cdeaba0ec80001eb32653c956f36c20cc332761b22492a623fd79a925",
+    "workers/visual-generation/references/rubrics/generated_visual.yaml": "c96375fe86ca433fa87d5c16b954f42cfc63a4bc6ebdcbf3ef352bc8c07197c9",
+    "workers/visual-generation/references/rubrics/unified_visual_review_v3.yaml": "c78c7c3766b3990b0923050ad5161bba806fc86bbb4fc66d1b51004beebd7233",
+    "workers/visual-generation/references/skill-sources.json": "b850a86f2d8b35cff8b5345be21924ee556ea301a444ad21852531f2d6d19c72",
+    "workers/visual-generation/references/unified-visual-review-format.md": "234f0bbd8e7a3d19f623d38257a44e967ef169b72f538b94378e86f8dbece65a",
+    "workers/visual-placement/SKILL.md": "47d63022523c51a5c70ff8e14cd151d0803fe44b532eedd1860b2bedd1ab55ed",
+    "workers/visual-placement/instruction.md": "11121d27e170d58295c230a57157d01b8fefe438f111394c41f1a57fe6ff793d",
+    "workers/visual-placement/references/placement-contract.md": "e30f8370f95b1cdeffe66335caf751209dcc492723aa58ad76b122b810d75f79"
+  }
+}
