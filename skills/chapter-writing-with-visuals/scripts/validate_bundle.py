@@ -3,17 +3,16 @@ from pathlib import Path
 import hashlib,json,re,sys
 
 ROOT=Path(__file__).resolve().parents[1]
-REPO=ROOT.parents[1]
-
-def validate(repo=REPO):
-    repo=Path(repo);root=repo/'skills/chapter-writing-with-visuals'
-    lock=json.loads((repo/'PACKAGE_LOCK.json').read_text())
-    actual={str(p.relative_to(repo)) for p in repo.rglob('*') if p.is_file() and '.git' not in p.relative_to(repo).parts and '__pycache__' not in p.parts and p.name!='PACKAGE_LOCK.json'}
+def validate(root=ROOT):
+    root=Path(root)
+    integrity_path=root/'references/integrity.json'
+    lock=json.loads(integrity_path.read_text())
+    actual={str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p!=integrity_path}
     if actual!=set(lock['files']):raise ValueError('Release file inventory differs from lock')
     for rel,expected in lock['files'].items():
-        p=repo/rel
+        p=root/rel
         if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=expected:raise ValueError('Missing/changed locked file: '+rel)
-    provenance=json.loads((repo/'SOURCE_PROVENANCE.json').read_text())
+    provenance=lock
     for f in provenance['visual_dependency_files']:
         data=(root/f['path']).read_bytes();sha=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
         if sha!=f['source_blob_sha']:raise ValueError('Pinned visual dependency changed: '+f['path'])
@@ -32,7 +31,7 @@ def validate(repo=REPO):
         for ref in re.findall(r'\]\(([^)]+)\)',p.read_text()):
             if '://' in ref or ref.startswith(('#','mailto:')):continue
             q=ref.split('#')[0]
-            if q and not (p.parent/q).exists():raise ValueError('Broken relative reference: '+str(p.relative_to(repo))+' -> '+ref)
+            if q and not (p.parent/q).exists():raise ValueError('Broken relative reference: '+str(p.relative_to(root))+' -> '+ref)
     pipeline=json.loads((root/'pipeline.json').read_text())
     expected=['chapter_writing','canonical_clean_evaluate','visual_generation','human_visual_review','visual_placement','final_clean_evaluate','human_final_approval']
     if pipeline['stages']!=expected or pipeline['image_extraction'] or pipeline['requires_visual_review_before_writing'] or not pipeline['requires_visual_review_before_placement'] or pipeline['visual_placement_rewrites_prose']:raise ValueError('Standalone ordering/scope drift')
