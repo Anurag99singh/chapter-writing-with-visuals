@@ -1,0 +1,41 @@
+pass_threshold: 0.95
+
+hard_fail:
+  - stale_canonical_chapter_or_evidence
+  - duplicate_candidate_id
+  - generated_candidate_without_passing_installed_render_review
+  - generated_candidate_without_passing_generated_evaluation
+  - missing_candidate_origin
+  - missing_human_decision_field
+  - generated_asset_missing
+  - subsection_coverage_missing
+
+dimensions:
+  subsection_coverage:
+    weight: 0.25
+    checks:
+      - "Every approved subsection is represented in order"
+      - "Subsections with no generated candidate explicitly record the verified absence/failure state"
+  canonical_link_integrity:
+    weight: 0.20
+    checks:
+      - "Review, plan and candidate locators bind to the passing current Artifact A and approved evidence revisions"
+      - "Every generated candidate targets an actual unchanged canonical subsection with exact asset provenance"
+  generated_candidate_integrity:
+    weight: 0.25
+    checks:
+      - "Every GEN candidate binds to one subsection and current Deep Research evidence"
+      - "Every GEN candidate has exact render asset provenance and a passing pinned installed Render review verdict"
+      - "Every GEN candidate has a separate passing Writing Agent generated_visual evaluation"
+      - "Generated visuals are labelled GENERATED_EXPLAINER and are not represented as evidence"
+  human_gate_readiness:
+    weight: 0.20
+    checks:
+      - "Every actual GEN candidate has HUMAN DECISION: PENDING in a new review"
+      - "Candidate IDs are unique and stable"
+      - "Actual image previews/assets are available for human inspection when technically supported"
+  auditability:
+    weight: 0.10
+    checks:
+      - "GEN mode, evidence basis, Adapt brief locator, asset locator, installed Render review verdict and Writing Agent evaluation status are recorded"
+      - "Canonical paragraph locator and approved evidence references are recorded"
