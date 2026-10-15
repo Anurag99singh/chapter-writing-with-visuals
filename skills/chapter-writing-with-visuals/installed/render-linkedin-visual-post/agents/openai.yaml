@@ -1,0 +1,15 @@
+interface:
+  display_name: Render LinkedIn Visual Post
+  short_description: Create bespoke branded LinkedIn visuals
+  default_prompt: Use $render-linkedin-visual-post to turn this approved copy and
+    visual story brief into a bespoke 4:5 LinkedIn image with an integrated signature
+    slot.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
