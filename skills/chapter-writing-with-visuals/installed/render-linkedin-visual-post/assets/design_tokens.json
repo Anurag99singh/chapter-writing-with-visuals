@@ -1,0 +1,57 @@
+{
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "aspect_ratio": "4:5",
+    "safe_area": {"left": 64, "right": 64, "top": 56, "bottom": 48}
+  },
+  "signature": {
+    "name": "Anshul Jain",
+    "tag": "AI & Gen AI Product Mgmt",
+    "priority": "secondary",
+    "portrait_slot_target_diameter_px": 90,
+    "portrait_slot_allowed_diameter_px": [85, 95],
+    "max_horizontal_block_width_fraction": 0.35,
+    "integration": "design name, tag, and empty circular portrait slot inside natural negative space or a shared content band; never create a dedicated empty footer row; place the approved photograph afterward without restyling"
+  },
+  "global_rules": [
+    "Use the design system only for styling; derive the layout from the content.",
+    "Never paste source screenshots into the final visual.",
+    "Do not mention an event or summit unless explicitly requested.",
+    "Optimize all text for mobile-feed readability."
+  ],
+  "systems": {
+    "DS-01-editorial-impact": {
+      "reference": "e2b651b4-a253-4f31-8b60-e209baf45034.png",
+      "palette": ["#F2E6D6", "#1F201E", "#CE612F", "#C88E6E", "#423C32", "#A8A39B"],
+      "fonts": {"display": ["Anton", "Bebas Neue", "League Gothic"], "support": ["Roboto Condensed", "Oswald"], "body": ["Inter", "Source Sans 3"]},
+      "sizes_px": {"display": [72, 94], "secondary_headline": [36, 48], "label": [24, 30], "body": [21, 26], "footer": [18, 21]},
+      "texture": "warm paper grain with black keylines and selective distressed edges",
+      "visual_language": "editorial collage, bold circular icons, strong orange emphasis"
+    },
+    "DS-02-data-signal": {
+      "reference": "caa81575-4ba0-462d-860e-0e4b37ebd2e3.png",
+      "palette": ["#022C45", "#0374FC", "#86B7FD", "#4688CE", "#274D68", "#F4F8FF"],
+      "fonts": {"headline": ["Poppins", "Aptos Display", "Inter"], "body": ["Inter", "Roboto", "Source Sans 3"], "numbers": ["Inter", "IBM Plex Sans"]},
+      "sizes_px": {"headline": [48, 60], "subtitle": [27, 32], "label": [24, 29], "number": [24, 32], "footnote": [18, 21]},
+      "texture": "flat navy field with restrained blue header wave",
+      "visual_language": "precise alignment, pale-blue information marks, calm analytical spacing"
+    },
+    "DS-03-neon-intelligence": {
+      "reference": "e6db58fe-5acb-46af-b783-7c1661065c22.png",
+      "palette": ["#040419", "#251355", "#8C47DB", "#5A29A0", "#F4F1F6", "#A0A2A7", "#41C8FF"],
+      "fonts": {"hook": ["League Spartan", "Montserrat", "Archivo Black"], "body": ["Inter", "Manrope", "Aptos"]},
+      "sizes_px": {"hook": [66, 88], "highlight": [82, 106], "supporting_copy": [27, 34], "label": [21, 26], "author": [29, 34]},
+      "texture": "near-black cinematic field with selective ultraviolet glow",
+      "visual_language": "one luminous technical focal visual, thin neon connectors, strong negative space"
+    },
+    "DS-04-visual-notebook": {
+      "reference": "da1fc25e-ad32-425d-9929-b79fbc2b75a6.png",
+      "palette": ["#FEFCF9", "#F6F3EE", "#252525", "#2767D8", "#25834C", "#7550B8", "#F2C94C", "#E8E2F3"],
+      "fonts": {"headline": ["Kalam", "Patrick Hand", "Comic Neue"], "notes": ["Kalam", "Patrick Hand"], "signature_tag": ["Inter"]},
+      "sizes_px": {"headline": [56, 72], "highlight": [60, 78], "section_heading": [30, 38], "body": [23, 29], "annotation": [19, 23], "author": [28, 34]},
+      "texture": "warm off-white paper with restrained marker washes",
+      "visual_language": "intelligent hand lettering, imperfect arrows, sparse diagrams and annotations"
+    }
+  }
+}
