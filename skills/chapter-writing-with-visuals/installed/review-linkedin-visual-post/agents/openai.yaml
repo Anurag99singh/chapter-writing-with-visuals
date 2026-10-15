@@ -1,0 +1,14 @@
+interface:
+  display_name: Review LinkedIn Visual Post
+  short_description: Gate LinkedIn images before delivery
+  default_prompt: Use $review-linkedin-visual-post to audit this LinkedIn image and
+    return a strict pass or fail with required fixes.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
