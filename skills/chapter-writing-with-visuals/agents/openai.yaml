@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chapter Writing with Visuals"
+  short_description: "Write chapters, generate visuals, and place approved images"
+  default_prompt: "Use $chapter-writing-with-visuals with my approved outline and evidence to create a chapter and approved explanatory visuals."
