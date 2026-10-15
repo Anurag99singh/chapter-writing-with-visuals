@@ -1,0 +1,15 @@
+interface:
+  display_name: Adapt LinkedIn Visual Content
+  short_description: Turn any source into faithful visual-post series
+  default_prompt: Use $adapt-linkedin-visual-content to audit this source, preserve
+    every distinct idea, and create exact LinkedIn image copy plus concept-specific
+    visual story briefs.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
