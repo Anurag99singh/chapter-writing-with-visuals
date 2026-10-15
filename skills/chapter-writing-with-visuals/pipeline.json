@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "stages": ["chapter_writing", "canonical_clean_evaluate", "visual_generation", "human_visual_review", "visual_placement", "final_clean_evaluate", "human_final_approval"],
+  "image_extraction": false,
+  "requires_visual_review_before_writing": false,
+  "requires_visual_review_before_placement": true,
+  "visual_placement_rewrites_prose": false,
+  "image_engine": "chatgpt_native",
+  "generated_origins": ["GENERATED_EXPLAINER"],
+  "thresholds": {"canonical": 0.85, "generated_visual": 0.90, "visual_review": 0.95, "final": 0.90},
+  "max_render_attempts": 2,
+  "max_diagnose_attempts_per_cycle": 3,
+  "dispatch": {"chapter_writing": {"model": "gpt-6-sol", "reasoning_effort": "medium", "fork_turns": "none"}, "supporting_roles": {"model": "gpt-6-sol", "reasoning_effort": "low", "fork_turns": "none"}},
+  "workers": {"chapter_writing": "workers/chapter-writing/SKILL.md", "visual_generation": "workers/visual-generation/SKILL.md", "visual_placement": "workers/visual-placement/SKILL.md", "clean_evaluate": "workers/clean-evaluate/SKILL.md"}
+}
